@@ -5,21 +5,20 @@ using namespace std;
 int main()
 {
     int a;
-    int b;
-
-    cout << "Enter number 1 :" <<  endl;
-
+    cout << "Enter a number to check prime :" << endl ; 
     cin >> a;
-    
-    cout << "Enter number 2 : " << endl ;
 
-    cin >> b; 
-    
-    if(a==b) {
-        cout << "Both numbers are equal" << endl ;
-    }
-    else{
-        cout << "Numbers are not equal" << endl;
+    for (int i = 2 ; i < a ; i++) {
+         
+        if(a % i == 0){
+            cout << a << " Its not a prime number" << endl ;
+            break;
+        }
+
+        else{
+            cout << a << " Its a Prime number " << endl ;
+            break;
+        }
     }
 
     return 0;
