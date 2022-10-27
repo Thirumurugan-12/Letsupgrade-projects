@@ -1,0 +1,6 @@
+create database customers ; 
+use customers ;
+create table customdata ( customer varchar(255) , orders text , products text ) ;
+select * from customers;
+select customer from where customer is regexp="a";
+select * from customers order by desc;
